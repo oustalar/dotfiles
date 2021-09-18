@@ -22,8 +22,6 @@ let mapleader=","
 
 autocmd BufNewFile,BufRead *.cpp set formatprg=astyle\ -T4pb
 
-colorscheme PaperColor 
-
 set ttimeoutlen=10
 
 "set switchbuf+=useopen
@@ -97,7 +95,7 @@ endfunction
 
 set cmdheight=1
 " set tthe runtime path to include Vundle and initialize
-set rtp+=~/vimfiles/bundle/Vundle.vim
+set rtp+=~/.vim/plugin/Vundle.vim
 call vundle#begin()
 "Plugin 'raimondi/delimitmate'
 "Plugin 'wincent/terminus'
