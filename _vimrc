@@ -53,8 +53,8 @@ nnoremap <Leader>f ggVG=
 nmap // :BLines<CR>
 "
 " Buffer Navigation
-nnoremap <Leader>3 :b#<CR>      " previous buffer
-nnoremap <Leader>n :bn<CR>      " next buffer
+nnoremap <Leader><left> :b#<CR>      " previous buffer
+nnoremap <Leader><right> :bn<CR>      " next buffer
 nnoremap <Leader>q :bd!<CR>             " close buffer
 
 "add semicolon add end
@@ -99,7 +99,7 @@ set rtp+=~/.vim/plugin/Vundle.vim
 call vundle#begin()
 "Plugin 'raimondi/delimitmate'
 "Plugin 'wincent/terminus'
-
+Plugin 'dimasg/vim-mark'
 "Plugin 'neovim/pynvim'
 Plugin 'VundleVim/Vundle.vim'
 "Plugin 'jiangmiao/auto-pairs'
