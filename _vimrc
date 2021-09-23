@@ -3,7 +3,7 @@ set hls
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 set is
-set gfn=fixedsys:h10
+set gfn=fixedsys:h12
 set ts=4
 set sw=4
 
@@ -17,7 +17,7 @@ iabbrev bits #include <bits/stdc++.h>
 set nocompatible " be iMproved, required
 filetype off " required
 nnoremap <SPACE> <Nop>
-let mapleader=","
+let mapleader="\<SPACE>"
 
 
 autocmd BufNewFile,BufRead *.cpp set formatprg=astyle\ -T4pb
@@ -133,7 +133,7 @@ syntax on
 
 inoremap <F4> <ESC> :w! <CR> :!g++ % -g -o %:r && %:r.exe <CR><CR>
 nnoremap <F5> :w! <CR> :!g++ % -g -o %:r && %:r.exe <CR> <CR>
-inoremap <F5> <Esc> :w! <CR> :!g++ % -g -o %:r && %:r.exe <CR><CR>i
+"inoremap <F5> <Esc> :w! <CR> :!g++ % -g -o %:r && %:r.exe <CR><CR>i
 nnoremap <F6> :w! <CR> :Termdebug %:r.exe <CR><ESC><C-W><S-L>i<CR>b main<CR>
 
 autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++14 % -o %:r -Wl,--stack,268435456<CR>
